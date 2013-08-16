@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My page</title>
+		{% block style %}
+		<link rel="stylesheet" href="{{ STATIC_URL }}base.css" type="text/css" media="screen" charset="utf-8">
+		{% endblock %}
+	</head>
+	<body>
+	{% block content %}
+	{% endblock %}
+	</body>
+</html>

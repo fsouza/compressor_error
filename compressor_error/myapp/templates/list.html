@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% load compress %}
+
+{% block style %}
+	{% compress css %}
+		{{ block.super }}
+		<link rel="stylesheet" href="{{ STATIC_URL }}app-list.css" type="text/css" media="screen" charset="utf-8">
+	{% endcompress %}
+{% endblock %}
+
+{% block content %}
+Hello compressed world!
+{% endblock %}
